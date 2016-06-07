@@ -1,4 +1,7 @@
-angular.module('BearCtrl', [])
-  .controller('BearController', function($scope) {
-    $scope.tagline = "Pocket protectors rule"
+angular.module('BearCtrl', ['BearService'])
+  .controller('BearController', function($scope, Bear) {
+    Bear.get()
+      .then(function(data) {
+        $scope.bears = data.data;
+      })
   })

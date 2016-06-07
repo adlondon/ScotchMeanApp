@@ -38,7 +38,7 @@ require('./app/routes')(app); //configure your routes
 
 // startup our app at http://localhost:8080
 app.listen(port);
-console.log("magin happens on port" + port);
+console.log("magic happens on port" + port);
 
 // expose app
 exports = module.exports = app;

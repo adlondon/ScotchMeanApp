@@ -1,5 +1,7 @@
 <div class="jumbotron text-center">
     <h1>Bears and Proud</h1>
 
-    <p>{{ tagline }}</p>
+    <ul ng-repeat="bear in bears">
+      <li>{{ bear.name }}</li>
+    </ul>
 </div>
